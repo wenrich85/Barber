@@ -15,8 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .views import ServiceListView
+from .views import ServiceListView, AvailabilityListView
 
 urlpatterns = [
     path('',ServiceListView.as_view()),
+    path('',AvailabilityListView.as_view()),
+
+    # path('')
 ]
